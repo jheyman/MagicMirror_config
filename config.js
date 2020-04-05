@@ -74,6 +74,7 @@ var config = {
 			config: {
 				imagesTopDirectory: 'modules/MMM-BackgroundSlideshow/exampleImages/link',
 				excludedImagePaths: ['modules/MMM-BackgroundSlideshow/exampleImages/link/.Trash-1000'],
+				filteredDirectoriesKeyword: 'NO_SHOW_',
 			   	transitionImages: true,
 				recursiveSubDirectories: true,
 				slideshowSpeed: 30000, 
