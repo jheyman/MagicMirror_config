@@ -1,0 +1,42 @@
+.normal,
+.dimmed,
+header,
+body {
+    color: #fff;
+}
+
+.region.below {
+width: 65%;
+margin: 0 auto;
+}
+
+.region.bottom.center {
+    width: 50%;
+    margin: 0 auto;
+}
+
+Html {
+    Cursor: none;
+    /* show cursor for debug */
+    /*Cursor: default;*/
+}
+
+/* Hacks to ensure that keyboard module is on top of 
+Z stack, such that its buttons can be clicked/touches */
+.region.bottom.left {
+    z-index: 999;
+}
+
+.region.top.left {
+    z-index: 999;
+}
+
+.region.middle.center {
+    z-index: 999;
+}
+
+.region.fullscreen.below {
+    z-index: 0;
+}
+
+

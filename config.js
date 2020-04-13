@@ -47,9 +47,14 @@ var config = {
 			position: "bottom_left"
 		},
 		{
+			module: "MMM-TouchPrompt",
+			disabled: false,
+			position: "bottom_center"
+		},		
+		{
 			module: "MMM-Keyboard",
 			disabled: false,
-			position: "middle_center",
+			position: "upper_third",
 			config: {
 				locale: "fr-FR",
 				debug: false
@@ -64,7 +69,7 @@ var config = {
 				touchMode: true,
 				enableKeyboard: false,
 				menuItems: {
-					refresh: { title: "REFRESH", icon: "recycle", source: "LOCAL" },
+					refresh: { title: "Refresh", icon: "recycle", source: "LOCAL" },
 					notify1: {
 						title: "SLIDESHOW_NEXT",
 						icon: "forward",
@@ -113,7 +118,7 @@ var config = {
 			lon: 2.1888326,
 		},
 		{
-			disabled: true,
+			disabled: false,
 			module: 'MMM-PIR-Sensor',
 			config: {
 				sensorPin: 14,
@@ -127,12 +132,12 @@ var config = {
 			position: 'top_left',
 			config: {
 				devices: [
-					{ ipAddress: "XXXXXXXXXX", name: "NAS", icon: "laptop" },
-					{ ipAddress: "XXXXXXXXXX", name: "cuisine", icon: "laptop" },
-					{ ipAddress: "XXXXXXXXXX", name: "alarme", icon: "laptop" },
-					{ ipAddress: "XXXXXXXXXX", name: "camera portail", icon: "laptop" },
-					{ ipAddress: "XXXXXXXXXX", name: "central", icon: "laptop" },
-					{ ipAddress: "XXXXXXXXXX", name: "garage", icon: "laptop" },
+					{ ipAddress: "XXXXXXXXXXXX", name: "NAS", icon: "laptop" },
+					{ ipAddress: "XXXXXXXXXXXX", name: "cuisine", icon: "laptop" },
+					{ ipAddress: "XXXXXXXXXXXX", name: "alarme", icon: "laptop" },
+					{ ipAddress: "XXXXXXXXXXXX", name: "camera portail", icon: "laptop" },
+					{ ipAddress: "XXXXXXXXXXXX", name: "central", icon: "laptop" },
+					{ ipAddress: "XXXXXXXXXXXX", name: "garage", icon: "laptop" },
 				],
 				showUnknown: false,
 				showOffline: true,
@@ -145,7 +150,7 @@ var config = {
 			disabled: true,
 			position: 'top_left',
 			config: {
-				key: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+				key: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
 				lat: 48.8589507,
 				lng: 2.2770204,
 				height: '300px',
@@ -169,7 +174,7 @@ var config = {
 			config: {
 				location: "Paris",
 				locationID: "2968815",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+				appid: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 			}
 		},
 		{
@@ -180,7 +185,7 @@ var config = {
 			config: {
 				location: "Paris",
 				locationID: "2968815",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+				appid: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 			}
 		},
 	]
