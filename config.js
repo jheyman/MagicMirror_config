@@ -72,20 +72,32 @@ var config = {
 					refresh: { title: "Refresh", icon: "recycle", source: "LOCAL" },
 					notify1: {
 						title: "SLIDESHOW_NEXT",
-						icon: "forward",
+						icon: "forward", /* from fontawesome.com list */
 						notification: "BACKGROUNDSLIDESHOW_NEXT",
 						payload: ""
 					},
 					notify2: {
 						title: "SLIDESHOW_PAUSE",
-						icon: "pause",
+						icon: "pause",/* from fontawesome.com list */
 						notification: "BACKGROUNDSLIDESHOW_PAUSE",
 						payload: ""
 					},
 					notify3: {
 						title: "SLIDESHOW_RESUME",
-						icon: "play",
+						icon: "play",/* from fontawesome.com list */
 						notification: "BACKGROUNDSLIDESHOW_PLAY",
+						payload: ""
+					},
+					notify4: {
+						title: "SLIDESHOW_PREVIOUS",
+						icon: "step-backward",/* from fontawesome.com list */
+						notification: "BACKGROUNDSLIDESHOW_PREVIOUS",
+						payload: ""
+					},
+					notify5: {
+						title: "SLIDESHOW_SEND_EMAIL",
+						icon: "envelope",/* from fontawesome.com list */
+						notification: "BACKGROUNDSLIDESHOW_SENDASEMAIL",
 						payload: ""
 					},
 				},
@@ -103,9 +115,19 @@ var config = {
 				transitionImages: true,
 				recursiveSubDirectories: true,
 				//recursiveSubDirectories: false,
-				slideshowSpeed: 30000,
+				slideshowSpeed: 60000,
 				backgroundSize: "contain",
-				gradient: ["rgba(0, 0, 0, 0.0) 0%", "rgba(0, 0, 0, 0) 100%"]
+				gradient: ["rgba(0, 0, 0, 0.0) 0%", "rgba(0, 0, 0, 0) 100%"],
+				emailConfig: {
+					service: 'gmail', // Email provider to use to send current pic
+					auth: {
+						user: 'XXXXXXXXXXXXXXXXXXX@gmail.com', // Your email account
+						pass: 'WWWWWWWWWWWWWWWWWWWWWWWWWW'     // Your password for email account
+					},
+					recipients: "XXXXXXX@gmail.com, YYYYYYYYYYYY@gmail.com",
+					emailText: "(some text to put in the email body)",
+					emailDisableTime: 60000
+				}
 			}
 		},
 		{
@@ -132,12 +154,12 @@ var config = {
 			position: 'top_left',
 			config: {
 				devices: [
-					{ ipAddress: "XXXXXXXXXXXX", name: "NAS", icon: "laptop" },
-					{ ipAddress: "XXXXXXXXXXXX", name: "cuisine", icon: "laptop" },
-					{ ipAddress: "XXXXXXXXXXXX", name: "alarme", icon: "laptop" },
-					{ ipAddress: "XXXXXXXXXXXX", name: "camera portail", icon: "laptop" },
-					{ ipAddress: "XXXXXXXXXXXX", name: "central", icon: "laptop" },
-					{ ipAddress: "XXXXXXXXXXXX", name: "garage", icon: "laptop" },
+					{ ipAddress: "xxx.xxx.xxx.xxx", name: "xxxx", icon: "laptop" },
+					{ ipAddress: "xxx.xxx.xxx.xxx", name: "xxxx", icon: "laptop" },
+					{ ipAddress: "xxx.xxx.xxx.xxx", name: "xxxx", icon: "laptop" },
+					{ ipAddress: "xxx.xxx.xxx.xxx", name: "xxxx", icon: "laptop" },
+					{ ipAddress: "xxx.xxx.xxx.xxx", name: "xxxx", icon: "laptop" },
+					{ ipAddress: "xxx.xxx.xxx.xxx", name: "xxxx", icon: "laptop" },
 				],
 				showUnknown: false,
 				showOffline: true,
@@ -150,7 +172,7 @@ var config = {
 			disabled: true,
 			position: 'top_left',
 			config: {
-				key: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+				key: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
 				lat: 48.8589507,
 				lng: 2.2770204,
 				height: '300px',
@@ -174,7 +196,7 @@ var config = {
 			config: {
 				location: "Paris",
 				locationID: "2968815",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+				appid: "xxxxxxxxxxxxxxxxxxxxxxxxxxx"
 			}
 		},
 		{
@@ -185,7 +207,7 @@ var config = {
 			config: {
 				location: "Paris",
 				locationID: "2968815",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+				appid: "xxxxxxxxxxxxxxxxxxxxxxxxxxx"
 			}
 		},
 	]
