@@ -134,10 +134,12 @@ var config = {
 			module: "clock",
 			disabled: false,
 			position: "top_right",
-			displaySeconds: false,
-			showSunTimes: true,
-			lat: 48.8668619,
-			lon: 2.1888326,
+			config: {
+				displaySeconds: false,
+				showSunTimes: true,
+				lat: 48.8668619,
+				lon: 2.1888326,
+			}
 		},
 		{
 			disabled: false,
